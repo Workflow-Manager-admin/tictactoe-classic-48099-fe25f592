@@ -1,0 +1,25 @@
+<div class="ttt-classic-container">
+  <h2 class="ttt-status" [style.color]="gameStatus === 'win' ? accentColor : secondaryColor">
+    {{ statusMessage }}
+  </h2>
+  <div class="ttt-board">
+    <div
+      class="ttt-row"
+      *ngFor="let row of board; let i = index">
+      <button
+        class="ttt-cell"
+        [ngClass]="{
+          'cell-x': board[i][j] === 'X',
+          'cell-o': board[i][j] === 'O'
+        }"
+        *ngFor="let cell of row; let j = index"
+        (click)="handleCellClick(i, j)"
+        [disabled]="cell || gameStatus !== 'playing'">
+        <span *ngIf="cell">{{ cell }}</span>
+      </button>
+    </div>
+  </div>
+  <div class="ttt-controls">
+    <button class="ttt-reset-btn" (click)="newGame()">Reset Game</button>
+  </div>
+</div>

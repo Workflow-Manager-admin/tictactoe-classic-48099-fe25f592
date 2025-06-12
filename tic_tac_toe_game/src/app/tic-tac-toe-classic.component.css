@@ -1,0 +1,109 @@
+:host {
+  --primary: #ffffff;
+  --secondary: #222222;
+  --accent: #007bff;
+  --cell-border: #c4c4c4;
+  --cell-size: clamp(60px, 10vw, 100px);
+}
+
+.ttt-classic-container {
+  background: var(--primary);
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  max-width: 375px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+}
+
+.ttt-status {
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+  color: var(--secondary);
+  transition: color 0.24s;
+}
+
+.ttt-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0 auto 1rem auto;
+}
+
+.ttt-row {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.ttt-cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background: var(--primary);
+  color: var(--secondary);
+  border: 2px solid var(--cell-border);
+  border-radius: 0.4rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  outline: none;
+  transition: background 0.16s, border-color 0.16s, color 0.16s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  user-select: none;
+  padding: 0;
+}
+
+.ttt-cell:disabled {
+  background: #f6f8fa;
+  color: #8b8b8b;
+  cursor: default;
+}
+
+.cell-x {
+  color: var(--accent);
+}
+
+.cell-o {
+  color: var(--secondary);
+}
+
+.ttt-controls {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ttt-reset-btn {
+  padding: 0.55rem 1.7rem;
+  font-size: 1.09rem;
+  font-weight: 500;
+  color: var(--primary);
+  background: var(--accent);
+  border: none;
+  border-radius: 0.55rem;
+  cursor: pointer;
+  box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.06);
+  transition: background 0.15s;
+}
+
+.ttt-reset-btn:hover,
+.ttt-reset-btn:focus {
+  background: #005bb5;
+}
+
+@media (max-width: 500px) {
+  .ttt-classic-container {
+    max-width: 98vw;
+    padding: 1.2rem 0.2rem 1.2rem 0.2rem;
+  }
+  .ttt-cell {
+    --cell-size: clamp(28px, 17vw, 70px);
+    font-size: 2rem;
+  }
+}

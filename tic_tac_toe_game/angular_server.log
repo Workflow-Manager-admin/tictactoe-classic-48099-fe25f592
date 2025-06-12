@@ -1,0 +1,132 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.204 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.530 seconds]
+
+▲ [WARNING] TS-998113: TicTacToeClassicComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:8:26:
+      8 │   imports: [RouterOutlet, TicTacToeClassicComponent],
+        ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:8:7:
+      8 │       *ngFor="let row of board; let i = index">
+        ╵        ~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:10:15:
+      10 │   templateUrl: './tic-tac-toe-classic.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:15:9:
+      15 │         *ngFor="let cell of row; let j = index"
+         ╵          ~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:10:15:
+      10 │   templateUrl: './tic-tac-toe-classic.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:18:15:
+      18 │         <span *ngIf="cell">{{ cell }}</span>
+         ╵                ~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:10:15:
+      10 │   templateUrl: './tic-tac-toe-classic.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'title' does not exist on type 'AppComponent'. [plugin angular-compiler]
+
+    src/app/app.component.html:228:20:
+      228 │       <h1>Hello, {{ title }}</h1>
+          ╵                     ~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:9:15:
+      9 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'accentColor' does not exist on type 'TicTacToeClassicComponent'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:2:63:
+      2 │ ...style.color]="gameStatus === 'win' ? accentColor : secondaryColor">
+        ╵                                         ~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:10:15:
+      10 │   templateUrl: './tic-tac-toe-classic.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'secondaryColor' does not exist on type 'TicTacToeClassicComponent'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:2:77:
+      2 │ ...style.color]="gameStatus === 'win' ? accentColor : secondaryColor">
+        ╵                                                       ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:10:15:
+      10 │   templateUrl: './tic-tac-toe-classic.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'button'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:11:8:
+      11 │         [ngClass]="{
+         ╵         ~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:10:15:
+      10 │   templateUrl: './tic-tac-toe-classic.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+

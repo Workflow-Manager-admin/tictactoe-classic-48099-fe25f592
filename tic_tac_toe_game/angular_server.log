@@ -6,31 +6,7 @@ Warning: Running a server with --disable-host-check is a security risk. See http
 The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
 ❯ Building...
 ✔ Building...
-Browser bundles     
-Initial chunk files  | Names            |  Raw size
-polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  22.59 kB | 
-styles.css           | styles           |  95 bytes | 
-
-                     | Initial total    | 112.88 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
-
-Application bundle generation complete. [2.204 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.530 seconds]
+Application bundle generation failed. [2.314 seconds]
 
 ▲ [WARNING] TS-998113: TicTacToeClassicComponent is not used within the template of AppComponent [plugin angular-compiler]
 
@@ -130,3 +106,4 @@ Application bundle generation failed. [0.530 seconds]
          ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+Watch mode enabled. Watching for file changes...
